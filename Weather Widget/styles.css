@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('images/weatherIco.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.background {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+#weatherImage {
+    max-width: 100px;
+    margin: 10px auto;
+}
+
+@media (max-width: 350px) {
+    .background {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        background-color: #fdfdfd14;
+        color: white;
+    }
+}
